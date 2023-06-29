@@ -1,13 +1,13 @@
 
 @font-face {
   font-family: 'Roboto Mono Light';
-  src: url('../fonts/RobotoMono-Light.ttf') format('truetype');
+  src: url('./fonts/RobotoMono-Light.ttf') format('truetype');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto Condensed Light';
-  src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+  src: url('./fonts/RobotoCondensed-Light.ttf') format('truetype');
   font-display: swap;
 }
 
@@ -35,6 +35,7 @@ body{
 	grid-template-rows: 5rem 1fr 2rem;
 	gap: calc(4rem + 1vw);
 	justify-content: center;
+  align-items: center;
 	padding: calc(1rem + 1vw);
 }
 
