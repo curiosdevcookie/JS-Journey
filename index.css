@@ -1,0 +1,91 @@
+
+@font-face {
+  font-family: 'Roboto Mono Light';
+  src: url('../fonts/RobotoMono-Light.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Light';
+  src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+	--font-headings: 'Roboto Mono Light';
+	--font-copy: 'Roboto Condensed Light';
+
+	--color-headings: rebeccaPurple;
+	--color-copy: grey;
+	--color-highlight: #f1c40f;
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+		"title"
+		"poemtext"
+		"subline";
+	grid-template-rows: 5rem 1fr 2rem;
+	gap: calc(4rem + 1vw);
+	justify-content: center;
+	padding: calc(1rem + 1vw);
+}
+
+header {
+	grid-area: title;
+	border-top: var(--color-headings) solid 0.1rem;
+	padding-top: calc(1rem + 1vw);
+}
+
+main
+{	grid-area: poemtext;
+	font-family: var(--font-copy);
+	color: var(--color-copy);
+	padding: 0 0 calc(1rem + 1vw) calc(1rem + 1vw);
+	border-bottom: var(--color-headings) solid 0.1rem;
+}
+
+footer {
+	grid-area: subline;
+	padding-left: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-headings);
+	font-weight: normal;
+	color: var(--color-headings);
+}
+
+p {
+	font-family: var(--font-copy);
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+p > em {
+	font-family: var(--font-headings);
+	font-size: 1.2rem;
+	padding-left: 1rem;
+}
+
+main > p::first-letter {
+	initial-letter: 2 2;
+	-webkit-initial-letter: 2 2;
+	margin-right: 0.8rem;
+}
+
+main > p::first-line {
+	font-variant: small-caps;
+}
+
+p::selection {
+	background: var(--color-highlight);
+	color: var(--color-headings);
+}
