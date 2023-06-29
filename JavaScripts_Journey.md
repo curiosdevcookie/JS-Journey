@@ -20,7 +20,7 @@ JavaScript's journey, whether Web or AI,
 With boundless potential, reaching ever new heights,  
 It ignites our mind and makes us fly.  
 
-May JavaScript's legacy forever endure – 
+May JavaScript's legacy forever endure –  
 Its potential making us yearn to explore.  
 And still, with each passing year, its character does mature.  
 A poetic ode to JavaScript — a language for us to adore.  
