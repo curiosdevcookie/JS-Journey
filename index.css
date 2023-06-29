@@ -69,15 +69,15 @@ p {
 	line-height: 1.5;
 }
 
-p > em {
+em {
 	font-family: var(--font-headings);
 	font-size: 1.2rem;
 	padding-left: 1rem;
 }
 
 main > p:first-of-type::first-letter {
+  -webkit-initial-letter: 2 2;
 	initial-letter: 2 2;
-	-webkit-initial-letter: 2 2;
 	margin-right: 0.8rem;
 }
 
