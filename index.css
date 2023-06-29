@@ -23,7 +23,7 @@
 
 	--color-headings: rebeccaPurple;
 	--color-copy: grey;
-	--color-highlight: #f1c40f;
+	--color-accent: #f1c40f;
 }
 
 body{
@@ -36,7 +36,7 @@ body{
 	gap: calc(4rem + 1vw);
 	justify-content: center;
   align-items: center;
-	padding: calc(1rem + 1vw);
+	padding: calc(5rem + 1vw);
 }
 
 header {
@@ -87,6 +87,19 @@ main > p::first-line {
 }
 
 p::selection {
-	background: var(--color-highlight);
+	background: var(--color-accent);
 	color: var(--color-headings);
+}
+
+
+/* Icons */
+
+#github-icon {
+  position: absolute;
+  top: calc(1rem + 1vw);
+  right: calc(1rem + 1vw);
+  width: calc(1rem + 1vw);
+  height: auto;
+  fill: var(--color-headings);
+  animation: grow-shrink 2s linear;
 }
