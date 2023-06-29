@@ -1,4 +1,4 @@
-# JS-Journey
+# A poem about JavaScript
 
 ![JSCraftCamp logo](images/logo_JSCraftCamp.svg)
 
