@@ -36,13 +36,13 @@ body{
 	gap: calc(4rem + 1vw);
 	justify-content: center;
   align-items: center;
-	padding: calc(5rem + 1vw);
+	padding: calc(3rem + 1vw);
 }
 
 header {
 	grid-area: title;
 	border-top: var(--color-headings) solid 0.1rem;
-	padding-top: calc(1rem + 1vw);
+	padding-top: calc(5rem + 1vw);
 }
 
 main
@@ -66,13 +66,13 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	font-family: var(--font-copy);
-	font-size: 1.6rem;
+	font-size: calc(1.1rem + 0.3vw);
 	line-height: 1.5;
 }
 
 em {
 	font-family: var(--font-headings);
-	font-size: 1.2rem;
+	font-size: calc(1rem + 0.2vw);
 	padding-left: 1rem;
 }
 
